@@ -31,18 +31,20 @@ body {
         }
 
         .form-group {
-            display: flex;
-            align-items: center;   
-            margin-bottom: 1rem;
-        }
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start; /* keep everything left */
+                margin-bottom: 1rem;
+            }
+            
+            .form-group label {
+                flex: 0 0 120px; /* fixed label width */
+                margin-right: 10px;
+                text-align: left;
+            }
+            
+            .form-group input {
+                flex: 1; /* input expands to fill space */
+            }
 
-        .form-group label {
-            width: 120px;          
-            margin-right: 10px;    
-            text-align: left;     
-        }
-
-        .form-group input {
-            flex: 1;               
-
-        }
