@@ -1,3 +1,5 @@
+let globalSetPage;
+
 const _Modal = ({ text }) => (
   <>
   <dialog id="myModal" open>
